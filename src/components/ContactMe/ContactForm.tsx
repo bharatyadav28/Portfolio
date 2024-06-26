@@ -61,7 +61,7 @@ const ContactForm = () => {
 
   return (
     <div
-      className=" sm:mx-[3.8rem] sm:mt-10 sm:mb-0 m-5 mx-3  pt-8 pb-10 sm:px-7 px-5 bg-dark_bg rounded-lg  "
+      className=" sm:mx-[3.8rem] sm:mt-10 mb-0 m-5 mx-3  pt-8 pb-10 sm:px-7 px-5 bg-dark_bg rounded-lg  "
       id="contact-form"
     >
       <h2 className="text-md text-highlight font-black mb-5">GET IN TOUCH</h2>

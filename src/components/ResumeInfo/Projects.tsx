@@ -39,7 +39,7 @@ const ProjectItem: React.FC<propsTypes> = ({
   }, [])
 
   useEffect(() => {
-    if (isSmallDevice) {
+    if (isSmallDevice || window.innerWidth < 640) {
       setIsHovered(true)
     } else {
       setIsHovered(false)

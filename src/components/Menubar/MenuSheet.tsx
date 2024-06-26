@@ -13,7 +13,7 @@ const MenuSheet = () => {
   }
 
   return (
-    <div>
+    <div className="lg:hidden">
       {!open && (
         <Button
           variant={'ghost'}

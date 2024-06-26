@@ -8,7 +8,7 @@ const ResumeInfo = () => {
   return (
     <div
       id="resume"
-      className="flex flex-col gap-[3rem] bg-light_bg  my-[4rem] sm:mx-[4rem] mx-[1rem]  "
+      className="flex flex-col gap-[3rem] bg-light_bg mt-[3rem]  mb-[4rem] sm:mx-[4rem] mx-[1rem]  "
     >
       <ProfessionalExperience />
       <Education />
