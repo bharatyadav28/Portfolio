@@ -55,7 +55,6 @@ const ContactForm = () => {
   })
 
   const onSubmit = (data: formSchemaType) => {
-    console.log(data)
     form.reset()
   }
 

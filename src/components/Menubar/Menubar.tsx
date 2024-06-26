@@ -1,6 +1,5 @@
 import TooltipLinks from './TooltipLinks'
 import { menubarData } from '@/lib/data/menubar'
-import SheetMenu from './SheetMenu'
 import MenuSheet from './MenuSheet'
 
 const Menubar = () => {
@@ -14,7 +13,7 @@ const Menubar = () => {
           <TooltipLinks items={menubarData} />
         </div>
       </aside>
-      {/* <SheetMenu /> */}
+
       <MenuSheet />
     </div>
   )

@@ -5,9 +5,12 @@ import {
   TooltipProvider,
 } from '@/components/ui/tooltip'
 import Link from 'next/link'
-import LinkItem from './LinkItems'
-import { menuLink as linkType } from './LinkItems'
-// import { motion } from "framer-motion";
+
+interface linkType {
+  Icon: React.ElementType
+  title: string
+  path: string
+}
 
 interface propsTypes {
   items: linkType[]
