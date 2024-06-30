@@ -20,7 +20,7 @@ const MenuSheet = () => {
         <Button
           variant={'ghost'}
           onClick={handleOpen}
-          className="my-4 pr-[0.4rem] "
+          className="my-4 pr-[0.5rem] "
         >
           <MenuIcon className="text-heading m-0" size={40} />
 
