@@ -23,8 +23,8 @@ const AboutMeImage = () => {
       <Image
         src={pic2}
         alt="Description"
-        width={190} // adjust the width as needed
-        height={400} // adjust the height as needed
+        width={190}
+        height={400}
         className="left-image rounded-xl"
       />
     </motion.div>

@@ -18,7 +18,6 @@ export default function Home() {
           <Introduction />
           <AboutMe />
           <ResumeInfo />
-
           <ContactForm />
         </div>
       </main>

@@ -15,6 +15,7 @@ const Introduction = () => {
             <br />
             <span className="text-highlight">Full Stack </span> Developer
           </h1>
+
           <p>
             <span className="text-highlight">{'<Code>'}</span>{' '}
             <TypeAnimation
@@ -30,9 +31,10 @@ const Introduction = () => {
               repeat={Infinity}
               className="text-foreground "
               cursor={true}
-            />{' '}
+            />
             <span className="text-highlight">{'<Code>'}</span>{' '}
           </p>
+
           <KnowMore />
         </div>
       </div>

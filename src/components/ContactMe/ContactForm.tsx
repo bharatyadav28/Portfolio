@@ -2,11 +2,14 @@
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
+
 import { Button } from '@/components/ui/button'
 import { Form } from '@/components/ui/form'
 import CustomFormField from './CustomFormField'
-import { motion } from 'framer-motion'
 
+// React hook form and zod  fields validation
 const formSchema = z.object({
   name: z
     .string()
@@ -54,8 +57,35 @@ const ContactForm = () => {
     },
   })
 
-  const onSubmit = (data: formSchemaType) => {
-    form.reset()
+  const onSubmit = async (data: formSchemaType) => {
+    const path = process.env.NEXT_PUBLIC_API_KEY
+    if (!path) {
+      throw Error('Form submission failed')
+    }
+    try {
+      const response = await fetch(path, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error('Form not submitted')
+      }
+
+      console.log('Form successfully submitted')
+      toast.success('Thank you! Your message has been successfully sent.')
+
+      form.reset() // Reset the form
+    } catch (error) {
+      toast.error(
+        'Oops! There was an error sending your message. Please try again later.',
+      )
+
+      console.error('Error submitting the form', error)
+    }
   }
 
   return (
@@ -81,12 +111,11 @@ const ContactForm = () => {
             textarea={true}
           />
 
-          {/* <Button type="submit">Submit</Button> */}
           <motion.button
             type="submit"
             whileHover={{ scale: 1.05, backgroundColor: '#f38e0a' }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-            className="bg-highlight   text-sm text-[#0f0f0f] rounded-md py-[0.5rem] px-[1rem]  font-extrabold"
+            className="bg-highlight  text-sm text-[#0f0f0f] rounded-md py-[0.5rem] px-[1rem]  font-extrabold"
           >
             Send Mail
           </motion.button>

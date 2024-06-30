@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 
+// Know more button
 const KnowMore = () => {
   const router = useRouter()
 

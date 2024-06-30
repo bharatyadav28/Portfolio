@@ -8,15 +8,20 @@ export const personalDetails = [
 
   {
     title: 'Languages',
-    value: 'English, hindi',
+    value: 'English, Hindi',
   },
   {
     title: 'Residance',
     value: 'Bahadurgarh, Haryana',
   },
+
+  // {
+  //   title: 'Country',
+  //   value: 'India',
+  // },
   {
-    title: 'Country',
-    value: 'India',
+    title: 'Email',
+    value: 'yadavbharat386@gmail.com',
   },
 ]
 
@@ -67,22 +72,27 @@ export const skillsData = [
 export const socialLinksData = [
   {
     Icon: Github,
+    title: 'github',
     url: 'https://github.com/bharatyadav28',
   },
   {
     Icon: Linkedin,
+    title: 'linkedin',
     url: 'https://www.linkedin.com/in/bharat-yadav-943a16220/',
   },
   {
     Icon: Mail,
+    title: 'mail',
     url: 'mailto:yadavbharat386@gmail.com',
   },
   {
     Icon: Facebook,
+    title: 'facebook',
     url: 'https://github.com/bharatyadav28',
   },
   {
     Icon: Twitter,
+    title: 'twitter',
     url: 'https://x.com/bharatyadav28',
   },
 ]

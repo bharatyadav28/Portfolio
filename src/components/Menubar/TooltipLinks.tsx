@@ -15,12 +15,11 @@ interface linkType {
 interface propsTypes {
   items: linkType[]
 }
+
+// For desktop screen
 const TooltipLinks: React.FC<propsTypes> = ({ items }) => {
   let classes =
     'flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-  // if (className) {
-  //   classes += ` ${className}`
-  // }
 
   return (
     <>

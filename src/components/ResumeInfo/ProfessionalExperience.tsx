@@ -15,14 +15,17 @@ const ProfessionalExperience = () => {
               <div className=" text-highlight font-semibold">Company Name:</div>
               <div className="text-foreground">{data.company}</div>
             </div>
+
             <div className="flex gap-2">
               <div className=" text-highlight font-semibold">Designation:</div>
               <div className="text-foreground">{data.designation}</div>
             </div>
+
             <div className="flex gap-2">
               <div className=" text-highlight font-semibold">Time Period:</div>
               <div className="text-foreground">{data.timePeriod}</div>
             </div>
+
             <div>
               <p>{data.work}</p>
             </div>

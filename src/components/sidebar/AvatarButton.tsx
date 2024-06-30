@@ -1,16 +1,16 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
-import DropdownIcon from "./DropdownIcon";
+import DropdownIcon from './DropdownIcon'
 
 const MyAvatar = () => {
   return (
-    <Avatar>
-      <AvatarImage src="/pic.jpg" />
+    <Avatar aria-label="Avator Button">
+      <AvatarImage src="/pic.jpg" alt="Avatar Image" />
 
       <AvatarFallback>BY</AvatarFallback>
     </Avatar>
-  );
-};
+  )
+}
 
 const AvatarButton = () => {
   return (
@@ -18,7 +18,7 @@ const AvatarButton = () => {
       <MyAvatar />
       <DropdownIcon />
     </div>
-  );
-};
+  )
+}
 
-export default AvatarButton;
+export default AvatarButton

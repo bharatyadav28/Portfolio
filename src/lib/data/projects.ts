@@ -8,10 +8,8 @@ export const projectsData = [
     id: 1,
     title: 'Intensify',
     description:
-      'It is a dynamic online assessment tool designed to enhance the learning experience.',
-    detailDescriptiom: ` It features an intuitive user interface, advanced assessment
-                creation capabilities, and seamless integration with existing
-                learning platforms.`,
+      'It is a comprehensive MERN-based learning platform designed to enhance the educational experience.',
+    detailDescriptiom: `It offers advanced search, secure authentication, and user engagement. Integrated shopping cart, Stripe payments, and implemented a robust course rating system for a dynamic online community.`,
     techUsed: ['React js', 'Nodejs', 'React Bootstrap', 'Mongodb', 'Redux'],
     image: Intensify,
     github: 'https://github.com/bharatyadav28/Intensify-frontend',
@@ -20,15 +18,10 @@ export const projectsData = [
   {
     id: 2,
     title: 'Ecommerce api',
-    description: 'A robust e-commerce API designed to support online stores. ',
-    detailDescriptiom: ` Features secure user authentication, product management, order processing, and Stripe payment integration, ensuring seamless transactions and efficient backend operations.`,
-    techUsed: [
-      'Node js',
-      'Exprees js',
-      'Mongodb',
-      'Tanstack Query',
-      'Redux toolkit',
-    ],
+    description:
+      'A robust and scalable e-commerce API designed to seamlessly support the diverse needs of online stores. ',
+    detailDescriptiom: ` Features includes authentication, cart management, ordering, reviews, filters, and pagination etc`,
+    techUsed: ['Node js', 'Exprees js', 'Mongodb'],
     image: EcommerceAPI,
 
     github: 'https://github.com/bharatyadav28/E-commerce-api',

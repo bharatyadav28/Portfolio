@@ -6,6 +6,8 @@ import CustomSheet from '../CustomSheet'
 import { Button } from '../ui/button'
 import { IoMdMenu as MenuIcon } from 'react-icons/io'
 
+// For mobile devices
+
 const MenuSheet = () => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => {
@@ -25,6 +27,7 @@ const MenuSheet = () => {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       )}
+
       <AnimatePresence>
         {open && <CustomSheet open={open} handleOpen={handleOpen} />}
       </AnimatePresence>
