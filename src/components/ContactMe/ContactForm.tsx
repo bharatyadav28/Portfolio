@@ -117,7 +117,7 @@ const ContactForm = () => {
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             className="bg-highlight  text-sm text-[#0f0f0f] rounded-md py-[0.5rem] px-[1rem]  font-extrabold"
           >
-            Send Mail
+            Send Message
           </motion.button>
         </form>
       </Form>
