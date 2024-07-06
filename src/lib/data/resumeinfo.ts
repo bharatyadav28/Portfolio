@@ -8,7 +8,7 @@ export const experience = [
   {
     company: 'Prishni',
     designation: 'Frontend Intern',
-    timePeriod: '05/2024 - Present',
+    timePeriod: '05/2024 - 07/2024',
     work: 'At Prishni, I am currently working on designing and developing the front-end interface for an online assessment tool using Next.js. Prior to this, I created detailed wireframes in Figma to ensure an intuitive user experience. This role allows me to blend my front-end development skills with my design expertise, contributing to the creation of a user-friendly and visually appealing application.',
   },
 ]
