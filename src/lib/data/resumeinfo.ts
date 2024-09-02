@@ -11,6 +11,12 @@ export const experience = [
     timePeriod: '05/2024 - 07/2024',
     work: 'At Prishni, I am currently working on designing and developing the front-end interface for an online assessment tool using Next.js. Prior to this, I created detailed wireframes in Figma to ensure an intuitive user experience. This role allows me to blend my front-end development skills with my design expertise, contributing to the creation of a user-friendly and visually appealing application.',
   },
+  {
+    company: 'Quantum IT Innovation',
+    designation: 'Full Stack Developer',
+    timePeriod: '07/2024 - Present',
+    work: 'I am actively contributing to the development of Ares Elite, a robust MERN stack application. My responsibilities include designing and implementing new features to enhance user experience, as well as diagnosing and resolving complex bugs to ensure optimal performance and stability.',
+  },
 ]
 
 export const educationData = [
