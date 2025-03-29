@@ -3,21 +3,65 @@ export const experience = [
     company: 'Quantum IT Innovation',
     designation: 'Full Stack Developer',
     timePeriod: '07/2024 - Present',
-    work: `Actively contributing to the development of the Revallusion E-learning platform by building its backend using Node.js and designing a robust admin panel. Leading the frontend development of the Yeii e-commerce platform with Next.js, creating a seamless and responsive shopping experience. Enhancing the functionality and performance of the Ares Elite MERN stack application by implementing new features and resolving complex bugs across both the backend and frontend.`,
+    work: [
+      {
+        project: 'Ravallusion (E-learning platform)',
+        contributions: [
+          'Developed the entire backend using Node.js, Express.js, and MongoDB, ensuring scalability and security.',
+          'Built a feature-rich admin panel for seamless management and control.',
+        ],
+      },
+      {
+        project: 'Yeii (E-commerce platform)',
+        contributions: [
+          'Leading frontend development using Next.js to create a modern and responsive shopping experience.',
+          'Focused on performance optimization, SEO, and user-friendly UI/UX.',
+        ],
+      },
+      {
+        project: 'Ares Elite (Sports healthcare platform)',
+        contributions: [
+          'Implemented new features and resolving complex bugs across both backend and frontend.',
+        ],
+      },
+      {
+        project: 'String Geo (OTT)',
+        contributions: [
+          'Migrated the entire frontend from React.js to Next.js for improved performance and SEO.',
+          'Enabled rich link previews for video pages, displaying the thumbnail and title on social media.',
+        ],
+      },
+    ],
   },
 
   {
     company: 'Prishni',
     designation: 'Frontend Intern',
     timePeriod: '05/2024 - 07/2024',
-    work: 'Designed and developed the front-end interface for an online assessment tool at Prishni using Next.js, ensuring a seamless and intuitive user experience. Created detailed wireframes in Figma, blending front-end development and design expertise to deliver a user-friendly and visually appealing application.',
+    work: [
+      {
+        project: 'Assessment tool',
+        contributions: [
+          'Built an accessible front-end for Prishni’s assessment tool using Next.js.',
+          'Designed detailed wireframes in Figma to create a visually appealing and user-friendly application.',
+        ],
+      },
+    ],
   },
 
   {
     company: 'Edureka',
     designation: 'Software Engineer',
     timePeriod: '09/2022 - 01/2023',
-    work: 'During my tenure at Edureka, I completed an intensive 3-month training program in React.js and Node.js, gaining hands-on expertise in modern web development. Subsequently, I worked on Elevate, a job search platform, where I resolved critical bugs and enhanced system functionality, contributing to improved platform performance and user satisfaction.',
+    work: [
+      {
+        project: 'Elevate (Job Search platform)',
+        contributions: [
+          'Completed a 3-month React.js and Node.js training at Edureka.',
+          'Optimized Elevate by fixing critical bugs and improving performance.',
+        ],
+      },
+    ],
   },
 ]
 
