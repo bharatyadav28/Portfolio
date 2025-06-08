@@ -12,7 +12,7 @@ const ResumeButton: React.FC<propsType> = ({ width }) => {
 
   const handleClick = () => {
     router.push(
-      'https://drive.google.com/file/d/1xSn_ht_QplZkr9GB4WsKwQ7nVYp7gW7v/view?usp=sharing',
+      'https://drive.google.com/file/d/18sEpsxbY-N8G7SUF_iHLpAiRVGm_Ordp/view?usp=sharing',
     )
   }
 
