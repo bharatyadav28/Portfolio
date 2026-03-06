@@ -7,16 +7,18 @@ interface itemPropsTypes {
 }
 const SkillsItem: React.FC<itemPropsTypes> = ({ type, items }) => {
   return (
-    <div className=" sm:flex sm:flex-col  ">
-      <h3 className="text-highlight  font-semibold capitalize whitespace-nowrap ">
-        {type}:{' '}
+    <div className="glass-card p-6 flex flex-col gap-4">
+      <h3 className="text-primary font-bold uppercase tracking-wide text-sm h-6">
+        {type}
       </h3>
 
-      <div className=" flex flex-wrap sm:gap-x-2 gap-[0.1rem] text-foreground">
-        {items.map((item, index) => (
-          <div key={item.name}>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item) => (
+          <div 
+            key={item.name}
+            className="px-3 py-1.5 bg-muted border border-border rounded-full text-foreground text-sm hover:border-primary/50 hover:bg-primary/10 transition-colors cursor-default"
+          >
             {item.name}
-            {index < items.length - 1 && ','}
           </div>
         ))}
       </div>
@@ -27,14 +29,18 @@ const SkillsItem: React.FC<itemPropsTypes> = ({ type, items }) => {
 const AllSkills = () => {
   const { languages, webTechnologies, databases, tools } = allskillsData
   return (
-    <section aria-label="skills">
-      <h2 className="text-heading text-xl font-extrabold">Skills</h2>
-      <hr className="text-heading my-3" />
-      <div className="flex flex-col sm:gap-2 gap-3">
-        <SkillsItem type="languages" items={languages} />
-        <SkillsItem type="Web technologies" items={webTechnologies} />
-        <SkillsItem type="databases" items={databases} />
-        <SkillsItem type="tools" items={tools} />
+    <section aria-label="skills" className="w-full">
+      <div className="flex items-center gap-4 mb-8">
+        <h2 className="text-foreground text-2xl font-extrabold tracking-tight">
+          SKILLS
+        </h2>
+        <div className="h-px bg-border flex-1"></div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <SkillsItem type="Languages" items={languages} />
+        <SkillsItem type="Web Technologies" items={webTechnologies} />
+        <SkillsItem type="Databases" items={databases} />
+        <SkillsItem type="Tools" items={tools} />
       </div>
     </section>
   )

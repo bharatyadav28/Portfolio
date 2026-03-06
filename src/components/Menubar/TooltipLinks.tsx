@@ -18,9 +18,6 @@ interface propsTypes {
 
 // For desktop screen
 const TooltipLinks: React.FC<propsTypes> = ({ items }) => {
-  let classes =
-    'flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-
   return (
     <>
       {items.map((item: linkType) => {
@@ -28,13 +25,15 @@ const TooltipLinks: React.FC<propsTypes> = ({ items }) => {
           <TooltipProvider key={item.title}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link href={item.path} className={classes}>
-                  {' '}
-                  <item.Icon fill="#F7A02D" className="h-7 w-7 " />
+                <Link 
+                  href={item.path} 
+                  className="flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-all hover:text-primary hover:bg-primary/10 group"
+                >
+                  <item.Icon className="h-6 w-6 transition-transform group-hover:scale-110" />
                   <span className="sr-only">{item.title}</span>
                 </Link>
               </TooltipTrigger>
-              <TooltipContent side="right" className="text-[#0f0f0f] font-bold">
+              <TooltipContent side="left" className="bg-popover border border-border text-popover-foreground font-medium px-3 py-1.5 shadow-xl">
                 {item.title}
               </TooltipContent>
             </Tooltip>

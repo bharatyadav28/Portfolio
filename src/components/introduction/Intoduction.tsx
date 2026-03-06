@@ -5,38 +5,36 @@ import KnowMore from '../KnowMore'
 
 const Introduction = () => {
   return (
-    <div className="h-[55rem] intro-container" id="home">
-      <div className="intro-bg">
-        <div className="intro-content mx-8 mt-[2rem]">
-          <h1 className="text-heading lg:leading-snug text-4xl mb-[1rem]">
-            <b>Hello, I&apos;m</b>
-            <br />
-            Bharat Yadav,
-            <br />
-            <span className="text-highlight">Full Stack </span> Developer
-          </h1>
+    <div className="min-h-[75vh] flex flex-col justify-center relative rounded-3xl overflow-hidden glass-card p-8 sm:p-16" id="home">
+      <div className="absolute inset-0 bg-primary/5 -z-10"></div>
+      
+      <div className="max-w-3xl relative z-10">
+        <h1 className="text-foreground leading-[1.1] text-5xl sm:text-7xl font-extrabold tracking-tighter mb-6">
+          <span className="text-muted-foreground block mb-2 text-2xl sm:text-3xl font-bold tracking-tight">Hello, I&apos;m</span>
+          Bharat Yadav,
+          <br />
+          <span className="text-gradient">Full Stack </span> 
+          <span className="font-light">Developer.</span>
+        </h1>
 
-          <p>
-            <span className="text-highlight">{'<Code>'}</span>{' '}
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed once, initially
-                'Write code. Debug code. Repeat.',
-                1000,
-                'Create. Test. Iterate.',
-                1000,
-              ]}
-              speed={1}
-              style={{ fontSize: '1em' }}
-              repeat={Infinity}
-              className="text-foreground "
-              cursor={true}
-            />
-            <span className="text-highlight">{'<Code>'}</span>{' '}
-          </p>
-
-          <KnowMore />
+        <div className="flex items-center gap-3 text-lg sm:text-xl font-medium text-muted-foreground mb-10 h-8">
+          <span className="text-primary font-mono text-sm sm:text-base bg-primary/10 px-2 py-1 rounded">{'<Code>'}</span>
+          <TypeAnimation
+            sequence={[
+              'Write code. Debug code. Repeat.',
+              1000,
+              'Create. Test. Iterate.',
+              1000,
+            ]}
+            speed={50}
+            repeat={Infinity}
+            className="text-foreground tracking-wide font-medium"
+            cursor={true}
+          />
+          <span className="text-primary font-mono text-sm sm:text-base bg-primary/10 px-2 py-1 rounded">{'</Code>'}</span>
         </div>
+
+        <KnowMore />
       </div>
     </div>
   )

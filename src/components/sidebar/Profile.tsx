@@ -8,27 +8,28 @@ const Profile = () => {
   return (
     <section
       aria-labelledby="bharat intro"
-      className="bg-light_bg text-white flex flex-col items-center px-12 py-7  "
+      className="flex flex-col items-center px-8 py-10 border-b border-border"
     >
-      <div className="relative h-32 w-32 rounded-full overflow-hidden ">
+      <div className="relative h-36 w-36 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-md mb-4 bg-background">
         <Image
           src={pic}
           alt="Profile Picture"
           fill
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="rounded-full object-cover "
+          className="rounded-full object-cover"
         />
       </div>
 
-      <div className="mt-2 flex flex-col items-center">
-        <h3 className="heading">
+      <div className="mt-2 flex flex-col items-center text-center">
+        <h3 className="text-2xl font-bold tracking-tight text-foreground">
           Bharat Yadav
-          {/* <span className="text-highlight ml-1">Yadav</span> */}
         </h3>
-        <p className="text-foreground mt-2 text-sm">Full Stack developer</p>
+        <p className="text-muted-foreground mt-2 text-sm font-medium tracking-wide uppercase">
+          Full Stack Developer
+        </p>
 
-        <h3 className="text-heading text-lg font-semibold mt-5 ">
+        <h3 className="text-foreground text-sm font-semibold mt-6 mb-3">
           Let&apos;s connect
         </h3>
         <SocialLinks />

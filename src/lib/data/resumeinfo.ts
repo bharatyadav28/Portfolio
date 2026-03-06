@@ -1,8 +1,29 @@
 export const experience = [
   {
+    company:"Softify Business Cloud",
+    designation:"Junior Developer",
+    timePeriod:"10/2025 - Present",
+    work:[
+      {
+        project:"Oswal Management System (University ERP)",
+        contributions:[
+          "Developed React components and fixed bugs to ensure seamless data flow between the frontend and backend.",
+          "Built and integrated  APIs using Node.js and PostgreSQL to manage university resources"
+        ]
+      },
+      {
+        project:"DasKitchen Intelligence",
+        contributions:[
+          "Built frontend dashboards to track real-time sales and performance metrics.",
+          "Managed operational flags to help staff monitor kitchen status and inventory."
+        ]
+      }
+    ]
+  },
+  {
     company: 'Quantum IT Innovation',
     designation: 'Full Stack Developer',
-    timePeriod: '07/2024 - Present',
+    timePeriod: '07/2024 - 09/2025',
     work: [
       {
         project: 'Ravallusion (E-learning platform)',
@@ -68,11 +89,13 @@ export const experience = [
 export const educationData = [
   {
     degree: 'Masters in computer application',
-    university: 'Indira Gandhi National Open University',
+    // university: 'Indira Gandhi National Open University',
+    university:""
   },
   {
     degree: 'B.sc(H) Computer Science',
-    university: 'University of Delhi (Du)',
+    // university: 'University of Delhi (Du)',
+    university:""
   },
 ]
 
@@ -132,7 +155,6 @@ export const allskillsData = {
       name: 'ShadCN',
       icon: '',
     },
-
     {
       name: 'Redux Toolkit',
       icon: '',
@@ -143,6 +165,10 @@ export const allskillsData = {
     },
   ],
   databases: [
+    {
+      name: 'PostgreSQL',
+      icon: '',
+    },
     {
       name: 'MongoDB',
       icon: '',

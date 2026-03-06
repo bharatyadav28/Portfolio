@@ -17,15 +17,11 @@ const SocialLinks = () => {
             transition={{ type: 'spring', stiffness: 300 }}
             key={index}
           >
-            <Link href={item.url} target="_blank">
+            <Link href={item.url} target={isMail ? '_self' : '_blank'}>
               <item.Icon
                 size={20}
                 strokeWidth={1}
-                className={`bg-highlight text-gray-900 p-[0.2rem] rounded-sm
-               hover:bg-[#f1f1f1]
-              transition
-                 ${!isMail && 'fill-current'} 
-              `}
+                className={`bg-primary text-primary-foreground p-[0.2rem] rounded-sm hover:bg-primary/80 transition-colors ${!isMail && 'fill-current'}`}
               />
             </Link>
           </motion.li>

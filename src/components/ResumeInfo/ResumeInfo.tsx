@@ -8,13 +8,15 @@ const ResumeInfo = () => {
   return (
     <div
       id="resume"
-      className="flex flex-col gap-[3rem] bg-light_bg mt-[3rem]  mb-[4rem] sm:mx-[4rem] mx-[1rem]  "
+      className="flex flex-col gap-16 mt-12 mb-16"
     >
       <ProfessionalExperience />
       <Education />
       <AllSkills />
       <Projects />
-      <ResumeButton width="lg:w-[15rem] w-full mt-0" />
+      <div className="flex justify-start mt-4">
+        <ResumeButton width="w-full sm:w-64" />
+      </div>
     </div>
   )
 }

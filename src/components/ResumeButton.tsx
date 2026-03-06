@@ -16,12 +16,13 @@ const ResumeButton: React.FC<propsType> = ({ width }) => {
     )
   }
 
-  let classes = `bg-highlight   text-sm text-[#0f0f0f]  rounded-md py-[0.5rem]  font-extrabold ${width ? width : 'w-full'} `
+  let classes = `bg-primary hover:bg-primary/90 text-sm text-primary-foreground rounded-lg py-3 font-bold shadow-sm transition-all ${width ? width : 'w-full'} `
 
   return (
     <motion.button
       onClick={handleClick}
-      whileHover={{ scale: 1.05, backgroundColor: '#f38e0a' }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       className={classes}
     >

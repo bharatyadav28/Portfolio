@@ -90,12 +90,18 @@ const ContactForm = () => {
 
   return (
     <div
-      className=" sm:mx-[3.8rem] sm:mt-10 mb-0 m-5 mx-3  pt-8 pb-10 sm:px-7 px-5 bg-dark_bg rounded-lg  "
+      className="glass-card mb-0 px-6 sm:px-12 py-10 w-full mx-auto"
       id="contact-form"
     >
-      <h2 className="text-md text-highlight font-black mb-5">GET IN TOUCH</h2>
+      <div className="flex items-center gap-4 mb-8">
+        <h2 className="text-foreground text-2xl font-extrabold tracking-tight uppercase">
+          GET IN TOUCH
+        </h2>
+        <div className="h-px bg-border flex-1"></div>
+      </div>
+      
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <CustomFormField form={form} name="name" placeholder="Name" />
           <CustomFormField form={form} name="email" placeholder="Email" />
           <CustomFormField form={form} name="subject" placeholder="Subject" />
@@ -113,9 +119,10 @@ const ContactForm = () => {
 
           <motion.button
             type="submit"
-            whileHover={{ scale: 1.05, backgroundColor: '#f38e0a' }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-            className="bg-highlight  text-sm text-[#0f0f0f] rounded-md py-[0.5rem] px-[1rem]  font-extrabold"
+            className="mt-4 bg-primary hover:bg-primary/90 text-sm text-primary-foreground rounded-lg py-3 px-8 font-bold shadow-sm transition-all uppercase tracking-wider"
           >
             Send Message
           </motion.button>

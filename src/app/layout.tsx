@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, Roboto } from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import './globals.css'
 
 import { Toaster } from '@/components/ui/sonner'
+import { ThemeProvider } from '@/components/theme-provider'
 
-const roboto = Roboto({ weight: '300', subsets: ['latin'] })
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Bharat Yadav',
@@ -17,10 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        {' '}
-        {children} <Toaster />
+    <html lang="en" suppressHydrationWarning>
+      <body className={outfit.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children} 
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )

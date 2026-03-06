@@ -4,12 +4,16 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className=" w-full  bg-dark_bg md:ps-[3rem] ps-[1rem] md:py-[3.5rem] pt-[4rem] pb-[5rem] flex md:flex-row flex-col items-center gap-5"
+      className="w-full glass-card px-8 sm:px-12 py-16 flex flex-col md:flex-row items-center gap-12"
     >
-      <div className="flex flex-col basis-8/12 md:pr-[4rem] pr-[1rem]">
-        <h2 className="text-highlight font-black text-2xl  mb-3">ABOUT ME</h2>
-        <div className="text-foreground flex flex-col text-md  gap-2">
-          <p>
+      <div className="flex flex-col basis-8/12">
+        <div className="flex items-center gap-4 mb-8">
+          <h2 className="text-primary font-extrabold text-3xl tracking-tight uppercase">ABOUT ME</h2>
+          <div className="h-px bg-border flex-1"></div>
+        </div>
+        
+        <div className="text-muted-foreground flex flex-col text-lg leading-relaxed gap-6 font-light">
+          <p className="text-foreground">
             I am a passionate software engineer with expertise in the MERN
             stack. I excel at creating dynamic, user-friendly web applications
             with seamless integration and robust performance in both front-end
@@ -35,7 +39,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="my-auto">
+      <div className="mx-auto md:mx-0 shrink-0">
         <AboutMeImage />
       </div>
     </section>

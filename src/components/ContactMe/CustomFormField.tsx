@@ -32,11 +32,15 @@ const CustomFormField: React.FC<propsTypes> = ({
       name={name}
       render={({ field }) => (
         <FormItem>
-          <FormControl className="bg-light_bg py-6 px-4 border-none rounded-none text-heading placeholder:text-foreground mb-0">
-            <InputField placeholder={placeholder} {...field} />
+          <FormControl>
+            <InputField 
+              placeholder={placeholder} 
+              {...field} 
+              className="bg-background py-6 px-4 border border-border rounded-lg text-foreground placeholder:text-muted-foreground mb-0 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary/50 transition-colors shadow-sm"
+            />
           </FormControl>
 
-          <FormMessage />
+          <FormMessage className="text-destructive text-sm mt-1" />
         </FormItem>
       )}
     />

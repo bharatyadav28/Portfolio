@@ -23,7 +23,7 @@ const config = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
-        // foreground: "hsl(var(--foreground))",
+        foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -52,12 +52,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        dark_bg: "#091523",
-        light_bg: "#182333",
-        foreground: "#acacac",
-        foregroundHover: "#E6E7E9",
-        heading: "#F2F2F2",
-        highlight: "#F7A02D",
+        // Old custom colors mapped to new logical equivalents so existing components don't break immediately
+        dark_bg: "transparent", 
+        light_bg: "transparent",
+        foregroundHover: "#f4f4f5", // zinc-100
+        heading: "#fafafa", // zinc-50
+        highlight: "#f59e0b", // amber-500
       },
       borderRadius: {
         lg: "var(--radius)",

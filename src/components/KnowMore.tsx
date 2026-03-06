@@ -13,10 +13,10 @@ const KnowMore = () => {
   return (
     <motion.button
       onClick={handleClick}
-      whileHover={{ scale: 1.05, backgroundColor: '#f38e0a' }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-      className="mt-5 bg-highlight px-3 py-2  text-sm text-[#0f0f0f] rounded-md   font-bold
-     "
+      className="mt-2 bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3.5 rounded-full font-bold tracking-wide transition-colors shadow-sm cursor-pointer"
     >
       Know More
     </motion.button>
